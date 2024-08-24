@@ -1,0 +1,111 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+  }
+  
+  .header {
+	background-color: #050e29;
+	color: #fff;
+	padding: 1em;
+	text-align: center;
+  }
+  
+  .body {
+	flex: 1;
+	padding: 2em;
+	background: black;
+  }
+
+  .list-of-languages {
+	font-size: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	list-style: none;
+	padding-bottom: 200px;
+  }
+  
+  .list-of-languages li {
+	width: 650px;
+	margin: 10px;
+  }
+  
+  .list-of-languages label {
+	display: flex;
+	align-items: center;
+  }
+  
+  .list-of-languages .checkbox {
+	margin-right: 0.5em;
+  }
+  
+  .list-of-languages .name {
+	font-weight: bold;
+  }
+  
+  .list-of-languages .exclamation {
+	color: white;
+	font-size: 1em;
+	margin-left: 0.2em;
+  }
+  
+  .footer {
+	background-color: #050e29;
+	color: #fff;
+	padding: 1em;
+	text-align: center;
+	margin-top: auto;
+  }
+  .tooltip {
+	border-radius: 20px;
+	position: absolute;
+	background-color: #f0f0f0;
+	border: 1px solid #ccc;
+	padding: 10px;
+	display: block;
+  }
+  
+  .tooltip svg {
+	width: 360px;
+	height: 280px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .tooltip polygon {
+	transform: translate(140px, 80px);
+	scale: 0.75;
+  }
+
+  .checkbox {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 2px solid #ccc;
+	background: #fff;
+	cursor: pointer;
+  }
+  
+  .button {
+	background-color: #4CAF50;
+	color: #ffffff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: #3e8e41;
+}
+
+.button-container {
+	text-align: center;
+	margin-top: 20px;
+}
