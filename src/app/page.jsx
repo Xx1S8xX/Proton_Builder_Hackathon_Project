@@ -68,7 +68,7 @@ export default function Home() {
 						<div className="single-how-works p-6 m-4 bg-gray-100 rounded-lg shadow-md max-w-xs">
 							<div className="single-how-works-icon text-red-500 text-5xl mb-4">
 								<span className="material-symbols-outlined">
-									location_on
+									monitor
 								</span>
 							</div>
 							<h2 className="text-xl font-semibold mb-2">
@@ -94,7 +94,7 @@ export default function Home() {
 							<li className="single-list-topics-content bg-white p-6 rounded-lg shadow-md flex-1 min-w-[280px]">
 								<div className="single-list-topics-icon text-yellow-500 text-5xl mb-4">
 									<span className="material-symbols-outlined">
-										restaurant
+										travel_explore
 									</span>
 								</div>
 								<h2 className="text-xl font-semibold mb-2">
@@ -108,7 +108,7 @@ export default function Home() {
 							<li className="single-list-topics-content bg-white p-6 rounded-lg shadow-md flex-1 min-w-[280px]">
 								<div className="single-list-topics-icon text-green-500 text-5xl mb-4">
 									<span className="material-symbols-outlined">
-										travel_explore
+										computer
 									</span>
 								</div>
 								<h2 className="text-xl font-semibold mb-2">
@@ -154,35 +154,36 @@ export default function Home() {
 								Efficient
 							</h2>
 							<p className="text-gray-600">
-								Lorem ipsum dolor sit amet, consectetur de
-								adipisicing elit, sed do eiusmod tempore
-								incididunt ut labore et dolore magna.
+								The website streamlines the process
+								of starting a project, helping you choose
+								the best way and path to start
 							</p>
 						</div>
 
 						<div className="single-blog-item p-6 m-4 bg-gray-100 rounded-lg shadow-md max-w-xs">
 							<h2 className="text-xl font-semibold mb-2">Quick</h2>
 							<p className="text-gray-600">
-								Lorem ipsum dolor sit amet, consectetur de
-								adipisicing elit, sed do eiusmod tempore
-								incididunt ut labore et dolore magna.
+									The platform is easy to use
+									and helps you  to get the first
+									push to start your project in little time
+
 							</p>
 						</div>
 
 						<div className="single-blog-item p-6 m-4 bg-gray-100 rounded-lg shadow-md max-w-xs">
 							<h2 className="text-xl font-semibold mb-2">
-								Meant for you
+								Tailored Experience
 							</h2>
 							<p className="text-gray-600">
-								Lorem ipsum dolor sit amet, consectetur de
-								adipisicing elit, sed do eiusmod tempore
-								incididunt ut labore et dolore magna.
+								The platform is designed to adapt
+								to the user's specific
+								needs and preferences
 							</p>
 						</div>
 					</div>
 				</div>
 			</section>
-			
+
 		</div>
 	);
 }

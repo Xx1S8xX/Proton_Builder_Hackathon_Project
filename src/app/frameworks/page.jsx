@@ -13,7 +13,7 @@ import {
     DialogTrigger,
 } from "@/components/dialog"
 
-function Page() {
+function FrameworksPage() {
     const { selectedLanguages, selectedFrameworks, setSelectedFrameworks } = useAppContext();
     const router = useRouter()
     console.log(selectedFrameworks)
@@ -25,10 +25,11 @@ function Page() {
             language: "Python",
             description:
                 "A high-level, full-featured web framework for building complex web applications quickly and efficiently.",
-            imageSrc: "/images/django.png",
+            imageSrc: "/images/django1.png",
             stats: [8, 7, 9, 9], // Speed: 8, Complexity: 7, Popularity: 9, Functionalities: 9
             installCommands: "pip install Django",
             setupCommands: "django-admin startproject myproject",
+            docs: "https://docs.djangoproject.com/en/5.1/",
         },
         {
             id: "flask-option",
@@ -40,6 +41,7 @@ function Page() {
             stats: [9, 5, 8, 7], // Speed: 9, Complexity: 5, Popularity: 8, Functionalities: 7
             installCommands: "pip install Flask",
             setupCommands: "flask run",
+            docs: "https://flask.palletsprojects.com/en/3.0.x/",
         },
         {
             id: "pyqt-option",
@@ -51,6 +53,7 @@ function Page() {
             stats: [8, 7, 7, 8], // Speed: 8, Complexity: 7, Popularity: 7, Functionalities: 8
             installCommands: "pip install PyQt5",
             setupCommands: "pyuic5 -x your_ui_file.ui -o your_ui_file.py",
+            docs: "https://doc.qt.io/qtforpython/",
         },
         {
             id: "kivy-option",
@@ -62,6 +65,7 @@ function Page() {
             stats: [8, 6, 6, 7], // Speed: 8, Complexity: 6, Popularity: 6, Functionalities: 7
             installCommands: "pip install kivy",
             setupCommands: "python main.py",
+            docs: "https://kivy.org/doc/stable/",
         },
 
         // Java
@@ -75,6 +79,7 @@ function Page() {
             stats: [7, 8, 9, 9], // Speed: 7, Complexity: 8, Popularity: 9, Functionalities: 9
             installCommands: "mvn install spring-boot-starter",
             setupCommands: "mvn spring-boot:run",
+            docs: "https://docs.spring.io/spring-boot/index.html",
         },
         {
             id: "hibernate-option",
@@ -86,6 +91,7 @@ function Page() {
             stats: [6, 7, 8, 8], // Speed: 6, Complexity: 7, Popularity: 8, Functionalities: 8
             installCommands: "mvn install hibernate-core",
             setupCommands: "mvn hibernate:generate",
+            docs: "https://hibernate.org/orm/documentation/",
         },
         {
             id: "java-fx-option",
@@ -97,6 +103,7 @@ function Page() {
             stats: [8, 7, 7, 8], // Speed: 8, Complexity: 7, Popularity: 7, Functionalities: 8
             installCommands: "mvn install openjfx",
             setupCommands: "mvn javafx:run",
+            docs: "https://openjfx.io/javadoc/17/",
         },
         {
             id: "android-sdk-option",
@@ -108,6 +115,7 @@ function Page() {
             stats: [8, 7, 9, 9], // Speed: 8, Complexity: 7, Popularity: 9, Functionalities: 9
             installCommands: "sdkmanager --install \"platform-tools\"",
             setupCommands: "adb devices",
+            docs: "https://developer.android.com/docs",
         },
 
         // C++
@@ -121,6 +129,7 @@ function Page() {
             stats: [8, 8, 7, 8], // Speed: 8, Complexity: 8, Popularity: 7, Functionalities: 8
             installCommands: "sudo apt-get install qt5-default",
             setupCommands: "qmake && make",
+            docs: "https://doc.qt.io/qt-5/",
         },
 
         // JavaScript
@@ -134,6 +143,7 @@ function Page() {
             stats: [9, 6, 9, 8], // Speed: 9, Complexity: 6, Popularity: 9, Functionalities: 8
             installCommands: "npx create-react-app my-app",
             setupCommands: "npm start",
+            docs: "https://reactjs.org/docs/getting-started.html",
         },
         {
             id: "angular-option",
@@ -145,6 +155,7 @@ function Page() {
             stats: [8, 7, 8, 9], // Speed: 8, Complexity: 7, Popularity: 8, Functionalities: 9
             installCommands: "npm install -g @angular/cli",
             setupCommands: "ng new my-project",
+            docs: "https://angular.io/docs",
         },
         {
             id: "electron-option",
@@ -156,6 +167,7 @@ function Page() {
             stats: [8, 6, 8, 8], // Speed: 8, Complexity: 6, Popularity: 8, Functionalities: 8
             installCommands: "npm install -g electron",
             setupCommands: "electron .",
+            docs: "https://electronjs.org/docs",
         },
 
         // C#
@@ -169,6 +181,7 @@ function Page() {
             stats: [8, 7, 8, 8], // Speed: 8, Complexity: 7, Popularity: 8, Functionalities: 8
             installCommands: "dotnet add package Microsoft.AspNetCore.App",
             setupCommands: "dotnet run",
+            docs: "https://docs.microsoft.com/en-us/aspnet/core/",
         },
 
         // Ruby
@@ -178,12 +191,12 @@ function Page() {
             language: "Ruby",
             description:
                 "A web application framework for building web applications, with a focus on simplicity, flexibility, and rapid development.",
-            imageSrc: "/images/rails.png",
+            imageSrc: "/images/RubyOR.png",
             stats: [8, 6, 8, 8], // Speed: 8, Complexity: 6, Popularity: 8, Functionalities: 8
             installCommands: "gem install rails",
             setupCommands: "rails new myapp",
+            docs: "https://guides.rubyonrails.org/",
         },
-
         // Go
         {
             id: "gin-option",
@@ -195,6 +208,7 @@ function Page() {
             stats: [9, 5, 7, 7], // Speed: 9, Complexity: 5, Popularity: 7, Functionalities: 7
             installCommands: "go get -u github.com/gin-gonic/gin",
             setupCommands: "go run main.go",
+            docs: "https://gin-gonic.com/docs/",
         },
         {
             id: "echo-option",
@@ -206,6 +220,7 @@ function Page() {
             stats: [8, 6, 6, 7], // Speed: 8, Complexity: 6, Popularity: 6, Functionalities: 7
             installCommands: "go get -u github.com/labstack/echo",
             setupCommands: "go run main.go",
+            docs: "https://echo.labstack.com/guide/",
         },
 
         // Swift
@@ -219,6 +234,7 @@ function Page() {
             stats: [8, 5, 7, 7], // Speed: 8, Complexity: 5, Popularity: 7, Functionalities: 7
             installCommands: "xcode-select --install",
             setupCommands: "swift run",
+            docs: "https://developer.apple.com/documentation/swiftui",
         },
 
         // Rust
@@ -232,6 +248,7 @@ function Page() {
             stats: [9, 7, 6, 7], // Speed: 9, Complexity: 7, Popularity: 6, Functionalities: 7
             installCommands: "cargo add actix-web",
             setupCommands: "cargo run",
+            docs: "https://actix.rs/docs/",
         },
 
         // TypeScript
@@ -245,35 +262,15 @@ function Page() {
             stats: [8, 6, 7, 8], // Speed: 8, Complexity: 6, Popularity: 7, Functionalities: 8
             installCommands: "npm install -g @nestjs/cli",
             setupCommands: "nest new project-name",
+            docs: "https://docs.nestjs.com/",
         },
-
-        // Kotlin
-        {
-            id: "spring-boot-option",
-            label: "Spring Boot",
-            language: "Kotlin",
-            description:
-                "A popular, opinionated framework for building web applications, with a focus on simplicity and ease of use.",
-            imageSrc: "/images/spring-boot.png",
-            stats: [8, 7, 8, 8], // Speed: 8, Complexity: 7, Popularity: 8, Functionalities: 8
-            installCommands: "mvn install spring-boot-starter",
-            setupCommands: "mvn spring-boot:run",
-        },
-
-
     ];
     const filteredFrameworks = frameworks.filter((framework) =>
         selectedLanguages.includes(framework.language)
     );
 
     const handleFrameworkSelect = (framework) => {
-        if (selectedFrameworks.includes(framework)) {
-            setSelectedFrameworks(
-                selectedFrameworks.filter((fw) => fw !== framework)
-            );
-        } else {
-            setSelectedFrameworks([...selectedFrameworks, framework]);
-        }
+        setSelectedFrameworks([framework]);
     };
 
     useEffect(() => {
@@ -299,16 +296,32 @@ function Page() {
                                     imageSrc={fw.imageSrc}
                                     stats={fw.stats}
                                     onSelect={() => handleFrameworkSelect(fw.label)}
-                                    selected={selectedFrameworks.includes(fw.label)}
+                                    isSelected={selectedFrameworks[0] === fw.label}
                                 /></DialogTrigger>
                             <DialogContent className={"bg-[white]"}>
                                 <DialogHeader>
-                                    <DialogTitle>Are you absolutely sure?</DialogTitle>
+                                    <DialogTitle>{fw.label}</DialogTitle>
                                     <DialogDescription>
-                                        This action cannot be undone. This will permanently delete your account
-                                        and remove your data from our servers.
+                                        {fw.description}
                                     </DialogDescription>
                                 </DialogHeader>
+                                <div className="flex flex-col gap-4">
+                                    <h2 className="text-lg font-bold">Stats</h2>
+                                    <ul>
+                                        <li>Speed: {fw.stats[0]}/10</li>
+                                        <li>Complexity: {fw.stats[1]}/10</li>
+                                        <li>Popularity: {fw.stats[2]}/10</li>
+                                        <li>Functionalities: {fw.stats[3]}/10</li>
+                                    </ul>
+                                    <h2 className='text-lg font-bold'>Language</h2>
+                                    <p>{fw.language}</p>
+                                    <h2 className="text-lg font-bold">Documentation</h2>
+                                    <a href={fw.docs} target='_blank'>{fw.docs}</a>
+                                    <h2 className="text-lg font-bold">Install Commands</h2>
+                                    <p>{fw.installCommands}</p>
+                                    <h2 className="text-lg font-bold">Setup Commands</h2>
+                                    <p>{fw.setupCommands}</p>
+                                </div>
                             </DialogContent>
                         </Dialog>
 
@@ -321,14 +334,9 @@ function Page() {
                         Back
                     </button>
                 </Link>
-                <Link href="/finish">
-                    <button className="px-8 py-2 bg-green-500 rounded-md uppercase">
-                        Continue
-                    </button>
-                </Link>
             </div>
         </div>
     );
 }
 
-export default Page;
+export default FrameworksPage;

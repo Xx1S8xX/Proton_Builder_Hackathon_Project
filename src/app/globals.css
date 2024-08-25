@@ -9,6 +9,11 @@
 #test__id {
 	display: flex;
 }
+
 #contact {
 	flex-grow: 10;
+}
+
+div .block {
+	text-align: left;
 }

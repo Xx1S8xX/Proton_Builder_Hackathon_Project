@@ -22,7 +22,7 @@ const FrameworkData = ({ id, label, description, imageSrc, stats, onSelect, sele
                     </div>
                 </div>
             </label>
-            <div className="pointer-events-none flex h-full justify-end items-center absolute end-1">
+            <div className="pointer-events-none flex h-full justify-end align-text:left absolute end-1">
                 <div className="inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100">
                     <LanguageStatsChart stats={stats} />
                 </div>

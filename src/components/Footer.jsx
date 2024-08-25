@@ -8,8 +8,8 @@ const Footer = () => {
 					<h2 className="text-2xl font-bold mb-4">Contact Us</h2>
 					<p className="mb-2">Proton Manager</p>
 					<p className="mb-2">Email: support@protonmanager.com</p>
-					<p className="mb-2">Phone: +1 (800) 123-4567</p>
-					<p className="mb-2">Address: 1234 Proton Way, Tech City, CA 91000</p>
+					<p className="mb-2">Phone: +961 78 866 645</p>
+					<p className="mb-2">Address: BDD 1499, Beirut, Lebanon</p>
 					<div className="mt-4">
 						<a href="#" className="text-blue-400 mx-2 hover:text-blue-300">
 							Facebook

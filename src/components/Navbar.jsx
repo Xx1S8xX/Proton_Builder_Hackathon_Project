@@ -25,7 +25,7 @@ const Navbar = () => {
 					<li>
 						<Link href="#contact" passHref>
 							<div className="uppercase px-3 py-1 text-sm font-semibold cursor-pointer">
-								contact
+								contact us
 							</div>
 						</Link>
 					</li>
