@@ -1,6 +1,6 @@
 const Footer = () => {
 	return (
-		<footer className="fixed bottom-4 w-full flex justify-center text-sm opacity-50">
+		<footer className="py-4 w-full flex justify-center text-sm opacity-50">
 			<p>© 2024 Proton Builder - All rights reserved</p>
 		</footer>
 	);

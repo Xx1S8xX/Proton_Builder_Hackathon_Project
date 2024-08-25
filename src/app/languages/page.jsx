@@ -80,8 +80,7 @@ function Page() {
 
 	return (
 		<div>
-			<div className="flex flex-col gap-4 sm:gap-6">
-				<Navbar />
+			<div className="flex flex-col gap-4 sm:gap-6 mt-4 sm:mt-6">
 				<ul className="grid w-full gap-6 md:grid-cols-2 lg:grid-cols-3 px-6 sm:px-10">
 					{languages.map((lang) => (
 						<LanguageCard
@@ -100,7 +99,6 @@ function Page() {
 					Continue
 				</button>
 			</div>
-			<Footer />
 		</div>
 	);
 }
