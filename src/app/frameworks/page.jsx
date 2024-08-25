@@ -275,7 +275,7 @@ function Page() {
     }, [])
 
     return (
-        <div>
+        <div className='flex flex-col justify-between pb-8 min-h-[calc(100vh-400px)]'>
             <div className="flex flex-col gap-4 sm:gap-6 mt-4 sm:mt-6">
                 <ul className="grid w-full gap-6 md:grid-cols-2 lg:grid-cols-3 px-6 sm:px-10">
                     {filteredFrameworks.map((fw) => (
@@ -293,7 +293,7 @@ function Page() {
                     ))}
                 </ul>
             </div>
-            <div className="flex px-10 pt-8 justify-center">
+            <div className="flex px-10 justify-center">
                 <Link href="/languages">
                     <button className="px-8 py-2 bg-green-500 rounded-md uppercase mr-4">
                         Back
