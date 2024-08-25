@@ -17,7 +17,7 @@ export default function Home() {
 							Welcome to Proton Manager
 						</h2>
 						<p className="text-lg sm:text-xl">
-							Need Help? That's what we're here for. Let us guide
+							Need Help? That is what we are here for. Let us guide
 							you through finding the easiest way to start your
 							project!
 						</p>
@@ -176,7 +176,7 @@ export default function Home() {
 							</h2>
 							<p className="text-gray-600">
 								The platform is designed to adapt
-								to the user's specific
+								to the user and their specific
 								needs and preferences
 							</p>
 						</div>
