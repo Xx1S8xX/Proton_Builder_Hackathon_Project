@@ -1,13 +1,12 @@
 "use client";
-import React, { useState, useEffect } from 'react';
-import { useSearchParams } from 'next/navigation';
+import React, { useEffect } from 'react';
 import FrameworkData from "@/components/FrameworkCard";
 import Link from "next/link";
 import { useAppContext } from '@/context/framework';
 import { useRouter } from 'next/navigation';
 
 function Page() {
-    const { selectedLanguages, setSelectedLanguages, selectedFrameworks, setSelectedFrameworks } = useAppContext();
+    const { selectedLanguages, selectedFrameworks, setSelectedFrameworks } = useAppContext();
     const router = useRouter()
     console.log(selectedFrameworks)
     const frameworks = [
@@ -18,7 +17,7 @@ function Page() {
             language: "Python",
             description:
                 "A high-level, full-featured web framework for building complex web applications quickly and efficiently.",
-            imageSrc: "/images/django.png",
+            imageSrc: "/images/django1.png",
             stats: [8, 7, 9, 9], // Speed: 8, Complexity: 7, Popularity: 9, Functionalities: 9
         },
         {
@@ -84,8 +83,28 @@ function Page() {
             language: "Java",
             description:
                 "A software development kit for building Android apps, providing a set of tools, libraries, and APIs for creating Android applications.",
-            imageSrc: "/images/android-sdk.png",
+            imageSrc: "/images/android sdk.png",
             stats: [8, 7, 9, 9], // Speed: 8, Complexity: 7, Popularity: 9, Functionalities: 9
+        },
+
+        // C
+        {
+            id: "cgil-option",
+            label: "CGIlib",
+            language: "C",
+            description:
+                "A C library for building web applications, providing a simple and efficient way to handle HTTP requests and responses.",
+            imageSrc: "/images/c.png",
+            stats: [7, 6, 5, 6], // Speed: 7, Complexity: 6, Popularity: 5, Functionalities: 6
+        },
+        {
+            id: "gtk-option",
+            label: "GTK",
+            language: "C",
+            description:
+                "A multi-platform toolkit for building graphical user interfaces, providing a wide range of widgets and tools for app development.",
+            imageSrc: "/images/c.png",
+            stats: [8, 7, 7, 8], // Speed: 8, Complexity: 7, Popularity: 7, Functionalities: 8
         },
 
 
@@ -98,6 +117,15 @@ function Page() {
                 "A cross-platform application development framework for building GUI applications, with a focus on performance and reliability.",
             imageSrc: "/images/qt.png",
             stats: [8, 8, 7, 8], // Speed: 8, Complexity: 8, Popularity: 7, Functionalities: 8
+        },
+        {
+            id: "wxwidgets-option",
+            label: "wxWidgets",
+            language: "C++",
+            description:
+                "A cross-platform GUI framework for building desktop applications, with a focus on ease of use and flexibility.",
+            imageSrc: "/images/wxwidgets.png",
+            stats: [7, 6, 6, 7], // Speed: 7, Complexity: 6, Popularity: 6, Functionalities: 7
         },
 
 
@@ -141,7 +169,15 @@ function Page() {
             imageSrc: "/images/aspnet.png",
             stats: [8, 7, 8, 8], // Speed: 8, Complexity: 7, Popularity: 8, Functionalities: 8
         },
-
+        {
+            id: "xamarin-option",
+            label: "Xamarin",
+            language: "C#",
+            description:
+                "A framework for building cross-platform mobile apps using C# and the .NET framework.",
+            imageSrc: "/images/csharp.png",
+            stats: [8, 7, 8, 8], // Speed: 8, Complexity: 7, Popularity: 8, Functionalities: 8
+        },
 
         // Ruby
         {
@@ -150,7 +186,7 @@ function Page() {
             language: "Ruby",
             description:
                 "A web application framework for building web applications, with a focus on simplicity, flexibility, and rapid development.",
-            imageSrc: "/images/rails.png",
+            imageSrc: "/images/ruby.png",
             stats: [8, 6, 8, 8], // Speed: 8, Complexity: 6, Popularity: 8, Functionalities: 8
         },
 
@@ -175,19 +211,6 @@ function Page() {
             stats: [8, 6, 6, 7], // Speed: 8, Complexity: 6, Popularity: 6, Functionalities: 7
         },
 
-
-        // Swift
-        {
-            id: "swiftui-option",
-            label: "SwiftUI",
-            language: "Swift",
-            description:
-                "A modern, declarative UI framework for building user interfaces, with a focus on simplicity and ease of use.",
-            imageSrc: "/images/swiftui.png",
-            stats: [8, 5, 7, 7], // Speed: 8, Complexity: 5, Popularity: 7, Functionalities: 7
-        },
-
-
         // Rust
         {
             id: "actix-web-option",
@@ -211,17 +234,6 @@ function Page() {
             stats: [8, 6, 7, 8], // Speed: 8, Complexity: 6, Popularity: 7, Functionalities: 8
         },
 
-
-        // Kotlin
-        {
-            id: "spring-boot-option",
-            label: "Spring Boot",
-            language: "Kotlin",
-            description:
-                "A popular, opinionated framework for building web applications, with a focus on simplicity and ease of use.",
-            imageSrc: "/images/spring-boot.png",
-            stats: [8, 7, 8, 8], // Speed: 8, Complexity: 7, Popularity: 8, Functionalities: 8
-        },
     ];
     const filteredFrameworks = frameworks.filter((framework) =>
         selectedLanguages.includes(framework.language)
@@ -263,7 +275,12 @@ function Page() {
                 </ul>
             </div>
             <div className="flex px-10 pt-8 justify-center">
-                <Link href="/next-step">
+                <Link href="/languages">
+                    <button className="px-8 py-2 bg-green-500 rounded-md uppercase mr-4">
+                        Back
+                    </button>
+                </Link>
+                <Link href="/finish">
                     <button className="px-8 py-2 bg-green-500 rounded-md uppercase">
                         Continue
                     </button>

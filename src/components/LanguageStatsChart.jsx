@@ -33,7 +33,7 @@ const LanguageStatsChart = ({ stats }) => {
 					y={y}
 					textAnchor="middle"
 					fontSize="12"
-					fill="rgba(255,255,255,0.7)"
+					fill="#333" // Changed to dark grey
 					dy="0.35em"
 				>
 					{`${labelNames[i]}: ${stats[i]}/10`}
@@ -50,12 +50,19 @@ const LanguageStatsChart = ({ stats }) => {
 				height="125"
 				className="bg-gray-700 rounded-lg"
 			>
+				<rect
+					x="0"
+					y="0"
+					width="300"
+					height="125"
+					fill="#F7F7F7"
+				/>
 				<circle
 					cx="150"
 					cy="64"
 					r="40"
 					fill="none"
-					stroke="white"
+					stroke="black"
 					strokeWidth="1"
 					style={{ opacity: 0.2 }}
 				/>

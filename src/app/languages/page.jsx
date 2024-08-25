@@ -1,6 +1,4 @@
 'use client';
-import { useState } from 'react';
-import Link from 'next/link';
 import LanguageCard from '@/components/LanguageCard';
 import { useRouter } from 'next/navigation';
 import { useAppContext } from '@/context/framework';
@@ -82,7 +80,7 @@ const languages = [
 		label: "Go",
 		language: "Go",
 		description:
-			"An open source programming language that makes it easy to build simple, reliable, and efficient software.",
+			"An open source programming language that makes it easy to build simple, reliable, and efficient software made by Google.",
 		imageSrc: "/images/go.png",
 		stats: [8, 6, 6, 7], // Speed: 8, Complexity: 6, Popularity: 6, Functionalities: 7
 	},
@@ -91,7 +89,7 @@ const languages = [
 		label: "Rust",
 		language: "Rust",
 		description:
-			"A multi-paradigm programming language designed for performance and safety, especially safe concurrency.",
+			"A multi-paradigm programming language designed for performance and safety, especially safe concurrency and zero cost abstractions.",
 		imageSrc: "/images/rust.png",
 		stats: [9, 8, 5, 7], // Speed: 9, Complexity: 8, Popularity: 5, Functionalities: 7
 	},

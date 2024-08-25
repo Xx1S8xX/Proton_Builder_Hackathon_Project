@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Footer = () => {
 	return (
 		<footer id="contact" className="bg-gray-800 text-white py-8">
@@ -18,7 +20,6 @@ const Footer = () => {
 						LinkedIn
 					</a>
 				</div>
-				<p className="text-gray-500 text-sm mt-6">© 2024 Proton Manager. All rights reserved.</p>
 			</div>
 		</footer>
 	);
