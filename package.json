@@ -9,8 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-dialog": "^1.1.1",
     "chart.js": "^4.4.4",
     "clsx": "^2.1.1",
+    "lucide-react": "^0.435.0",
     "material-symbols": "^0.22.2",
     "next": "14.2.6",
     "react": "^18.3.1",

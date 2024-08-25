@@ -4,7 +4,7 @@ import LanguageStatsChart from "@components/LanguageStatsChart";
 
 const FrameworkData = ({ id, label, description, imageSrc, stats, onSelect, selected }) => {
     return (
-        <li onClick={onSelect} className="relative flex group overflow-clip">
+        <li  className="relative flex group overflow-clip">
             <label
                 htmlFor={id}
                 className={cn(`inline-flex items-center justify-between w-full px-4 py-3 text-gray-500 bg-white border-2
