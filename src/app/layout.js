@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import "material-symbols";
 import { AppProvider } from "@/context/framework";
+import { cn } from "@/lib/utils";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,9 +17,11 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<AppProvider>
-				<body className={inter.className}>
-					<Navbar />
-					{children}
+				<body className={cn("min-h-screen flex flex-col justify-between", inter.className)}>
+					<div>
+						<Navbar />
+						{children}
+					</div>
 					<Footer />
 				</body>
 			</AppProvider>

@@ -129,7 +129,7 @@ function Page() {
 					))}
 				</ul>
 			</div>
-			<div className="flex px-10 pt-8 justify-center">
+			<div className="flex px-100 pt-8 justify-center">
 				<button onClick={() => router.push("/frameworks")} className="px-8 py-2 bg-green-500 rounded-md uppercase">
 					Continue
 				</button>

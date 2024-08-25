@@ -6,22 +6,9 @@
 	font-size: 4rem;
 }
 
-footer {
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-  }
-
-.footer {
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	background-color: #f0f0f0;
-	/* optional */
-	padding: 10px;
-	text-align: center;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-	vertical-align: bottom;
+#test__id {
+	display: flex;
+}
+#contact {
+	flex-grow: 10;
 }
