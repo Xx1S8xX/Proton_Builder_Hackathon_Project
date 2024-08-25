@@ -7,10 +7,13 @@ const AppContext = createContext();
 // Create a provider component
 export function AppProvider({ children }) {
     const [selectedLanguages, setSelectedLanguages] = useState([]);
+    const [selectedFrameworks, setSelectedFrameworks] = useState([]);
 
     const value = {
         selectedLanguages,
         setSelectedLanguages,
+        selectedFrameworks,
+        setSelectedFrameworks
     };
 
     return <AppContext.Provider value={value}>{children}</AppContext.Provider>;

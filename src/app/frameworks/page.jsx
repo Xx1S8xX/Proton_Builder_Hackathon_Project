@@ -7,10 +7,9 @@ import { useAppContext } from '@/context/framework';
 import { useRouter } from 'next/navigation';
 
 function Page() {
-    const { selectedLanguages, setSelectedLanguages } = useAppContext();
-    const [selectedFrameworks, setSelectedFrameworks] = useState([]);
+    const { selectedLanguages, setSelectedLanguages, selectedFrameworks, setSelectedFrameworks } = useAppContext();
     const router = useRouter()
-    console.log(selectedLanguages)
+    console.log(selectedFrameworks)
     const frameworks = [
         // Python
         {
